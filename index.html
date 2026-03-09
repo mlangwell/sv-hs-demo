@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>SNAKE</h1>
+
+    <div id="scoreboard">
+        <span id="score">SCORE: 0</span>
+        <span id="highScore">BEST: 0</span>
+    </div>
+
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="overlay">
+            <h2 id="overlayTitle">SNAKE</h2>
+            <p id="overlayMsg">Use the arrow keys to move the snake.</p>
+            <p>Eat the red food to grow and earn points.</p>
+            <p>Avoid walls and your own tail!</p>
+            <p class="final-score" id="finalScore"></p>
+            <button id="startBtn">START GAME</button>
+            <p id="instructions">↑ ↓ ← → Arrow Keys to move</p>
+        </div>
+    </div>
+
+    <script src="snake.js"></script>
+</body>
+</html>
