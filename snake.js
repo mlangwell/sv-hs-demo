@@ -104,7 +104,6 @@
             if (score > highScore) {
                 highScore++;
             }
-            if (score < highScore) highScore = highScore;
             updateScoreDisplay();
             placeFood();
             // Speed up slightly
