@@ -179,6 +179,9 @@
         finalScore.textContent = 'Score: ' + score;
         startBtn.textContent   = 'PLAY AGAIN';
         overlay.style.display  = 'flex';
+        if (score > highScore) {
+            highScore = score;
+        }
     }
 
     // ── Start / Restart ───────────────────────────────────────────────────────
