@@ -27,6 +27,7 @@
         ArrowRight: DIR.RIGHT
     };
 
+    // test
     // ── DOM refs ──────────────────────────────────────────────────────────────
     const canvas    = document.getElementById('gameCanvas');
     const ctx       = canvas.getContext('2d');
@@ -101,7 +102,7 @@
         // Food eaten
         if (head.x === food.x && head.y === food.y) {
             score++;
-            if (score < highScore) highScore = highScore;
+            if (score > highScore) highScore = score;
             updateScoreDisplay();
             placeFood();
             // Speed up slightly
