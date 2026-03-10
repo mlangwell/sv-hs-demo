@@ -100,8 +100,8 @@
 
         // Food eaten
         if (head.x === food.x && head.y === food.y) {
-            score++;
-            if (score < highScore) highScore = highScore;
+            score ++;
+            if (score > highScore) highScore = highScore;
             updateScoreDisplay();
             placeFood();
             // Speed up slightly
@@ -179,9 +179,6 @@
         finalScore.textContent = 'Score: ' + score;
         startBtn.textContent   = 'PLAY AGAIN';
         overlay.style.display  = 'flex';
-        if (score > highScore) {
-            highScore = score;
-        }
     }
 
     // ── Start / Restart ───────────────────────────────────────────────────────
