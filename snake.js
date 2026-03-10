@@ -101,7 +101,8 @@
         // Food eaten
         if (head.x === food.x && head.y === food.y) {
             score++;
-            if (score < highScore) highScore = highScore;
+            if (score >= highscore) highscore = score;
+    
             updateScoreDisplay();
             placeFood();
             // Speed up slightly
